@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Gift</title>
+  
+  <style>
+    body {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+    }
+    #gift-box {
+      font-size: 100px;
+      cursor: pointer;
+      user-select: none;
+    }
+    #click-text {
+      display: none;
+      padding:12px 24px;
+      font-size: 28px;
+      color: black;
+      cursor: pointer;
+      border:3px solid:blue;
+      border-radius: 8px;.
+      cursor: pointer;
+      transition: background-color 0.3s,transform 0.2s;
+       border-radius: 10px;
+       background:pink;
+       text-size-adjust: 20px;
+       
+       
+      
+    }
+      
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div id="gift-box" onclick="openGift()">🎁</div>
+  <div id="click-text" onclick="openWebsite()">"Click here, Aryan
+"</div>
+
+  <script>
+    function openGift() {
+      // Hide the gift box
+      document.getElementById("gift-box").style.display = "none";
+
+      // Show the text
+      document.getElementById("click-text").style.display = "block";
+    }
+
+    function openWebsite() {
+      // Redirect to another website
+      window.location.href = "Wishing.html"; // Replace with your target URL
+    }
+  </script>
+</body>
+</html>
